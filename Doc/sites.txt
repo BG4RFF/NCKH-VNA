@@ -1,0 +1,24 @@
+[AD8302 ARU RF Module Description] http://www.ebay.com/itm/AD8302-RF-MODULE-for-ARDUINO-or-other-MCU-or-stand-alone-/152195847681
+[Skyworks Solutions Inc. DC08-73LF Datasheet & Description] http://www.digikey.com/product-detail/en/skyworks-solutions-inc/DC08-73LF/863-1243-1-ND/2408416
+[CPL-WBF-00D3 - Alternative for DC08-73LF] http://www.st.com/content/st_com/en/products/emi-filtering-and-signal-conditioning/ipd-for-rf-front-end/couplers/cpl-wbf-00d3.html
+[Improvement of uncertainty analysis for waveguide VNA measurement at terahertz frequency] http://ieeexplore.ieee.org/document/7540468/
+[A compact, tethered E-band VNA reflectometer] http://ieeexplore.ieee.org/document/7540153/
+[One-Port Direct/Reverse Method for Characterizing VNA Calibration Standards] http://ieeexplore.ieee.org/document/7502079/
+[The Cable Phase Difference Detection of Very High Frequency (VHF) Antenna Array Based on Ad8302] http://ieeexplore.ieee.org/document/7726402/
+[The phase detectors based on AD8302 for millimeter wave heterodyne interferometer] http://ieeexplore.ieee.org/document/6336209/
+[Extraction algorithm of reflection coefficient for antenna VSWR meter based on directional coupler and integrated amplitude phase detector] http://ieeexplore.ieee.org/document/6037158/
+[Evaluation of a VNA-based material characterization kit at frequencies from 0.75 THz to 1.1 THz] http://ieeexplore.ieee.org/document/7873952/
+[Contact-free solution for millimeter-wave on-wafer VNA measurements] http://ieeexplore.ieee.org/document/7869921/
+[Remote control of VNA and parameter analyzer for RFCV measurements using Python] http://ieeexplore.ieee.org/document/7836225/
+[Zero-bias model and compensation of VNA intermediate frequency system] http://ieeexplore.ieee.org/document/7761740/
+[Using VNA for IPT coupling factor measurement] http://ieeexplore.ieee.org/document/7752135/
+[VNA Based Measurements and Nonlinear Modeling for Efficient RF Circuit Design] http://ieeexplore.ieee.org/document/7751078/
+[Connection repeatability of waveguide verification standards for VNA system] http://ieeexplore.ieee.org/document/7601237/
+[Review product - Mini-VNA Tiny Antenna Analyzer up to 3 GHz] http://www.wimo.com/minivna-network-analyser_e.html
+[Review KVE-60C (MFJ-223) VNA antenna analyser]
+[Review MFJ-225 HF/VHF Two-Port Graphic Antenna Analyzer] http://www.cq-amateur-radio.com/cq_highlights/2013_cq/2013_06_cq/2013_dayton_new_products/MFJ/MFJ-225/2013_MFJ-225.html
+[Review product - Mini-VNA Tiny Antenna Analyzer up to 3 GHz - Production information] http://www.hamradio.co.uk/accessories-antenna-analysers/mrs/mini-vna-tiny-antenna-analyzer-up-to-3-ghz-pd-5600.php
+[Review site] http://www.antenna-analyzer.com/
+[Review product - MFJ-226 VNA Antenna Analyzer]
+[Review site] http://w5big.com/vna2180.htm
+[Review site] https://www.nonstopsystems.com/radio/frank_radio_coax-sw.htm
