@@ -4,6 +4,7 @@
 /*********** Defines ***********/
 enum GPIO_Pin_Mode {
     GPIO_Pin_Mode_INPUT = 0,
+    GPIO_Pin_Mode_INPUT_PULLUP,
     GPIO_Pin_Mode_OUTPUT
 };
 
@@ -21,6 +22,9 @@ void GPIO_Init(uint8_t Pin, GPIO_Pin_Mode mode)
     {
         case GPIO_Pin_Mode_INPUT:
             pinMode(Pin, INPUT);
+        break;
+        case GPIO_Pin_Mode_INPUT_PULLUP:
+            pinMode(Pin, INPUT_PULLUP);
         break;
         case GPIO_Pin_Mode_OUTPUT:
             pinMode(Pin, OUTPUT);
