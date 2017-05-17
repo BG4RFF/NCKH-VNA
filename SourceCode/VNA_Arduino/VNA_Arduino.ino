@@ -9,7 +9,9 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(AD8302_Read_Magnitude());
-  Serial.println(AD8302_Read_Phase());
+  UART_Send("\nMagnitude: ");
+  UART_Send(AD8302_Read_Magnitude());
+  UART_Send("\nPhase: ");
+  UART_Send(AD8302_Read_Phase());
   delay(200);
 }

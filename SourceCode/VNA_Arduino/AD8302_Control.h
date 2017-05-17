@@ -26,7 +26,7 @@ float AD8302_Read_Magnitude(void)
     tmp = ADC_Read(VMAG);
 
     /* Calculate magnitude ratio */
-    result = -30 + (tmp * 60 / 1024);
+    result = -30 + (tmp * 60 / 1023);
 
     return result;
 }
@@ -39,7 +39,7 @@ float AD8302_Read_Phase(void)
     tmp = ADC_Read(VPHS);
 
     /* Calculate phase difference */
-    result = 180 - (tmp * 180 / 1024);
+    result = 180 - (tmp * 180 / 1023);
 
     return result;
 }

@@ -214,7 +214,7 @@ void ADF4350::setR4(){
 
 void ADF4350::setR5(){
 
-    unsigned long r5 = (1 << 22) + (3<<19) + 5; // lock detect pin mode = digital lock detect
+   unsigned long r5 = (1 << 22) + (3<<19) + 5; // lock detect pin mode = digital lock detect
    byte r5Ary[] = { lowByte(r5 >> 24), lowByte(r5 >> 16), lowByte(r5 >> 8), lowByte(r5) };
    memcpy(&_r5, &r5Ary, sizeof(r5Ary));
 
