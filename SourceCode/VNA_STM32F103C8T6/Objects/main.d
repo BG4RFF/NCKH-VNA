@@ -28,3 +28,4 @@
 .\objects\main.o: .\SourceCode\StdPeriph\inc\stm32f10x_usart.h
 .\objects\main.o: .\SourceCode\StdPeriph\inc\stm32f10x_wwdg.h
 .\objects\main.o: .\SourceCode\StdPeriph\inc\misc.h
+.\objects\main.o: .\SourceCode\User\Inc\Button_Control.h

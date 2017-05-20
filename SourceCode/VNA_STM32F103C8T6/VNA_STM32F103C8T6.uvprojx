@@ -394,6 +394,11 @@
               <FileType>1</FileType>
               <FilePath>.\SourceCode\User\Src\main.c</FilePath>
             </File>
+            <File>
+              <FileName>Button_Control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceCode\User\Src\Button_Control.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
