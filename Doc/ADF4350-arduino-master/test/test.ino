@@ -5,10 +5,11 @@
 ADF4350 PLL(COM_PIN);
 
 void setup() {
-    SPI.begin();          // for communicating with DDS/PLLs
-    SPI.setClockDivider(4);
-    SPI.setDataMode(SPI_MODE0);
-    delay(500); // give it a sec to warm up
+  SPI.begin();          // for communicating with DDS/PLLs
+  //SPI.setClockDivider(4);
+  //SPI.setDataMode(SPI_MODE0);
+  SPI.beginTransaction(SPISettings(14000000, MSBFIRST, SPI_MODE0));
+  delay(500); // give it a sec to warm up
 
 
   /* 00 45 00 70 */
@@ -57,5 +58,5 @@ void setup() {
 }
 
 void loop() {
-  
+
 }
