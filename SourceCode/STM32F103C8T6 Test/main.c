@@ -1,4 +1,7 @@
 #include "stm32f10x.h"                  // Device header
+#include "delay.h"
+#include "SPI_Driver.h"
+#include "ADC_Driver.h"
 
 EXTI_InitTypeDef   EXTI_InitStructure;
 GPIO_InitTypeDef   GPIO_InitStructure;
@@ -14,11 +17,22 @@ volatile uint8_t state = 0; /* OFF */
 
 int main(void)
 {
-	Led_Config();
-	Button_Config();
+	__IO uint16_t a = 0, b = 0;
+	
+	SystemInit();
+	
+	delay_Init();
+	ADC_init();
+	
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AIN;
+	GPIO_Init(GPIOB, &GPIO_InitStructure);
+	
 	while (1)
 	{
-		
+		delay_us(10000ul);
+		a = ADC_readADC1(ADC_Channel_8);
+		b = ADC_readADC1(ADC_Channel_9);
 	}
 }
 

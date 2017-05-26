@@ -394,6 +394,21 @@
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
             </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>SPI_Driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SPI_Driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC_Driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ADC_Driver.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -433,6 +448,21 @@
               <FileName>stm32f10x_exti.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c</FilePath>
             </File>
           </Files>
         </Group>

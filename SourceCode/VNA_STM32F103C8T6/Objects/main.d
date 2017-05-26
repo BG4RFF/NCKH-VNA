@@ -29,3 +29,7 @@
 .\objects\main.o: .\SourceCode\StdPeriph\inc\stm32f10x_wwdg.h
 .\objects\main.o: .\SourceCode\StdPeriph\inc\misc.h
 .\objects\main.o: .\SourceCode\User\Inc\Button_Control.h
+.\objects\main.o: .\SourceCode\User\Inc\delay.h
+.\objects\main.o: .\SourceCode\User\Inc\UART_Driver.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

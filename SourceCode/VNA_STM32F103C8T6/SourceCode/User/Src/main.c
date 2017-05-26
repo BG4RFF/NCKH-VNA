@@ -1,5 +1,7 @@
 #include "stm32f10x.h"                  // Device header
 #include "Button_Control.h"
+#include "delay.h"
+#include "UART_Driver.h"
 
 volatile uint8_t state = 0;
 
@@ -10,6 +12,7 @@ void Led_off(void);
 void zbtn0_Callback(void);
 void zbtn1_Callback(void);
 void zbtn2_Callback(void);
+void UARTReceived_Callback(char *message, uint8_t size);
 
 /**
   * @brief  Main program.
@@ -18,12 +21,20 @@ void zbtn2_Callback(void);
   */
 int main(void)
 {
+	char buff[100] = "AT+RESET\0";
+	SystemInit();
+	
+	UART_Init(UARTReceived_Callback);
+	delay_Init();
 	Led_Config();
 	Button_Init(zbtn0_Callback, zbtn1_Callback, zbtn2_Callback);
 	
+	delay_us(1000000ul);
+	UART_SendStr(buff);
+	
 	while (1)
 	{
-	
+		
 	}
 }
 
@@ -94,4 +105,20 @@ void zbtn2_Callback(void)
 		Led_off();
 		state = 0;
 	}
+}
+
+void UARTReceived_Callback(char *message, uint8_t size)
+{
+	if (state == 0) /* OFF */
+	{
+		Led_on();
+		state = 1;
+	}
+	else
+	{
+		Led_off();
+		state = 0;
+	}
+	
+	UART_SendStr(message);
 }

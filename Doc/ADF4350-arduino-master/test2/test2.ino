@@ -2,7 +2,7 @@
 
 #define ADF4351_LE 3
 
-volatile uint32_t registers[6] =  {0x4580A8, 0x80080C9, 0x18004E42, 0x4B3, 0xBC803C, 0x580005} ; // 437 MHz
+volatile uint32_t registers[6] =  {0xAE8018, 0x8008029, 0x4E42, 0x4B3, 0xB5003C, 0x580005} ; // 437 MHz
 
 void WriteRegister32(const uint32_t value)
 {
