@@ -30,6 +30,9 @@ static void (*_btn2_Callback)(void);
 
 /*********** Methods ***********/
 void Button_Init(void (*btn0_Callback)(void), void (*btn1_Callback)(void), void (*btn2_Callback)(void));
+void Button_SetBtn0Callback(void (*btn0_Callback)(void));
+void Button_SetBtn1Callback(void (*btn1_Callback)(void));
+void Button_SetBtn2Callback(void (*btn2_Callback)(void));
 
 void EXTI0_IRQHandler(void);
 void EXTI1_IRQHandler(void);

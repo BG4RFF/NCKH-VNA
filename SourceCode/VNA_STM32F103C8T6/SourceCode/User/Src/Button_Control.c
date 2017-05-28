@@ -101,6 +101,21 @@ void Button_Init(void (*btn0_Callback)(void), void (*btn1_Callback)(void), void 
 	NVIC_Init(&NVIC_InitStructure);
 }
 
+void Button_SetBtn0Callback(void (*btn0_Callback)(void))
+{
+	_btn0_Callback = btn0_Callback; /* Assign Callback function */
+}
+	
+void Button_SetBtn1Callback(void (*btn1_Callback)(void))
+{
+	_btn1_Callback = btn1_Callback; /* Assign Callback function */
+}
+	
+void Button_SetBtn2Callback(void (*btn2_Callback)(void))
+{
+	_btn2_Callback = btn2_Callback; /* Assign Callback function */
+}
+
 void EXTI0_IRQHandler(void)
 {
 	/* Make sure that interrupt flag is set */

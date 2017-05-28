@@ -1,0 +1,25 @@
+HC-05 (USART)
+    Tx - PA9
+    Rx - PA10
+
+BTN (EXTI)
+    BTN0 - PA0
+    BTN1 - PA1
+    BTN2 - PA2
+
+ADF4350 (SPI)
+    SCK - PA5
+    MISO - PA6
+    MOSI - PA7
+
+AD8302 (ADC)
+    ADC12_IN8 - PB0
+    ADC12_IN9 - PB1
+
+LCD (GPIO)
+    RST - PB9
+    CE - PB8
+    DC - PB7
+    DIN - PB6
+    CLK - PB5
+    LIGHT - PA12

@@ -2,6 +2,7 @@
 #include "delay.h"
 #include "SPI_Driver.h"
 #include "ADC_Driver.h"
+#include "LCD5110.h"
 
 EXTI_InitTypeDef   EXTI_InitStructure;
 GPIO_InitTypeDef   GPIO_InitStructure;
@@ -17,22 +18,17 @@ volatile uint8_t state = 0; /* OFF */
 
 int main(void)
 {
-	__IO uint16_t a = 0, b = 0;
-	
 	SystemInit();
 	
+	Led_Config();
 	delay_Init();
-	ADC_init();
 	
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1;
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AIN;
-	GPIO_Init(GPIOB, &GPIO_InitStructure);
-	
-	while (1)
+  while(1)
 	{
-		delay_us(10000ul);
-		a = ADC_readADC1(ADC_Channel_8);
-		b = ADC_readADC1(ADC_Channel_9);
+		delay_us(500000ul);
+		Led_on();
+		delay_us(500000ul);
+		Led_off();
 	}
 }
 

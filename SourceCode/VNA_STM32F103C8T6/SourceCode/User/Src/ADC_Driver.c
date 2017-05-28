@@ -49,3 +49,13 @@ uint16_t ADC_readADC1(uint8_t channel)
   /* Get the conversion value */
   return ADC_GetConversionValue(ADC1);
 }
+
+uint16_t ADC_readMag(void)
+{
+	return ADC_readADC1(VMAG);
+}
+	
+uint16_t ADC_readPhs(void)
+{
+	return ADC_readADC1(VPHS);
+}

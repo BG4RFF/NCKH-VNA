@@ -31,3 +31,4 @@
 .\objects\main.o: delay.h
 .\objects\main.o: SPI_Driver.h
 .\objects\main.o: ADC_Driver.h
+.\objects\main.o: LCD5110.h
