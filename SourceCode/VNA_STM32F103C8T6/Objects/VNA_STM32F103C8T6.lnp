@@ -17,6 +17,6 @@
 ".\objects\stm32f10x_spi.o"
 ".\objects\stm32f10x_adc.o"
 --strict --scatter ".\Objects\VNA_STM32F103C8T6.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\VNA_STM32F103C8T6.map" -o .\Objects\VNA_STM32F103C8T6.axf
