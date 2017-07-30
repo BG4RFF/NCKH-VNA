@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "button_control.h": "c",
+        "stm32f10x_exti.h": "c",
+        "stm32f10x_usart.h": "c",
+        "adc_driver.c": "cpp"
+    }
+}

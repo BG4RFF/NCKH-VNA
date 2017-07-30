@@ -1,0 +1,11 @@
+.\objects\adc_driver.o: Src\User\Src\ADC_Driver.c
+.\objects\adc_driver.o: .\Src\User\Inc\ADC_Driver.h
+.\objects\adc_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\adc_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\adc_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\adc_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\adc_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_types.h
+.\objects\adc_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h
+.\objects\adc_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/sysctl.h
+.\objects\adc_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/gpio.h
+.\objects\adc_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/adc.h

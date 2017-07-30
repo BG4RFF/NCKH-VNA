@@ -1,0 +1,12 @@
+--cpu=Cortex-M4.fp
+"C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib"
+".\objects\main.o"
+".\objects\button_control.o"
+".\objects\uart_driver.o"
+".\objects\adc_driver.o"
+".\objects\startup_tm4c129.o"
+".\objects\system_tm4c129.o"
+--strict --scatter ".\Objects\VNA_TM4C1294XL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\VNA_TM4C1294XL.map" -o .\Objects\VNA_TM4C1294XL.axf

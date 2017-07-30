@@ -1,0 +1,27 @@
+HC-05 (UART)
+    U1Tx - PB1
+    U1Rx - PQ4
+
+BTN (EXTI)
+    BTN0 - PL0
+    BTN1 - PL1
+    BTN2 - PL2
+
+AD8302 (ADC)
+    AIN2 - PE1 (ADC0 - MAG)
+    AIN3 - PE0 (ADC1 - PHS)
+
+LCD (GPIO)
+    RST - PH0
+    CE - PH1
+    DC - PK6
+    DIN - PK7
+    CLK - PB5
+    LIGHT - PA7
+
+ADF4350 (SPI)
+    PP3
+    PQ1
+    SPI CLK - PD3
+    SPI MISO - PA0
+    SPI MOSI - PD1

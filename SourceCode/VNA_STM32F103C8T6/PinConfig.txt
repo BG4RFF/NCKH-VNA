@@ -8,6 +8,8 @@ BTN (EXTI)
     BTN2 - PA2
 
 ADF4350 (SPI)
+    PA3
+    PA4
     SCK - PA5
     MISO - PA6
     MOSI - PA7
