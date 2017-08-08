@@ -1,0 +1,10 @@
+.\objects\lcd5110.o: Src\User\Src\LCD5110.c
+.\objects\lcd5110.o: .\Src\User\Inc\LCD5110.h
+.\objects\lcd5110.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\lcd5110.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\lcd5110.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lcd5110.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_types.h
+.\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h
+.\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/sysctl.h
+.\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/gpio.h

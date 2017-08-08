@@ -8,4 +8,6 @@
 .\objects\uart_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_types.h
 .\objects\uart_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h
 .\objects\uart_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/sysctl.h
+.\objects\uart_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/gpio.h
+.\objects\uart_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/pin_map.h
 .\objects\uart_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/uart.h

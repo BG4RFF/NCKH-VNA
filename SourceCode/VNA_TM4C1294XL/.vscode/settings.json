@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "button_control.h": "c"
+        "button_control.h": "c",
+        "led.c": "cpp"
     }
 }

@@ -8,6 +8,15 @@ void UART_Init(void (*UART_Received_CallBack)(char *, uint8_t))
   while (!SysCtlPeripheralReady(SYSCTL_PERIPH_UART1))
   {
   }
+
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
+  while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOB))
+  {
+  }
+
+  GPIOPinConfigure(GPIO_PB0_U1RX);
+  GPIOPinConfigure(GPIO_PB1_U1TX);
+
   UARTConfigSetExpClk(UART1_BASE, SysCtlClockGet(), 9600, (UART_CONFIG_WLEN_8 | UART_CONFIG_STOP_ONE | UART_CONFIG_PAR_NONE));
 
   UARTIntDisable(UART1_BASE, UART_INT_RX);
@@ -36,15 +45,16 @@ void UART_SendStr(char *str)
 void UART1_Handler(void)
 {
   if (UARTIntStatus(UART1_BASE, false) & UART_INT_RX)
-	{
-		if (_index <= RECEIVE_BUFFER_SIZE) _buffer[_index++] = (char)UARTCharGet(UART1_BASE);
-		if (_buffer[_index - 1] == '\0')
-		{
-			strcpy(_sendBuffer, _buffer);
-			_UART_Received_CallBack(_sendBuffer, _index);
-			_index = 0;
-		}
-	
-		UARTIntClear(UART1_BASE, UART_INT_RX);
-	}
+  {
+    if (_index <= RECEIVE_BUFFER_SIZE)
+      _buffer[_index++] = (char)UARTCharGet(UART1_BASE);
+    if (_buffer[_index - 1] == '\0')
+    {
+      strcpy(_sendBuffer, _buffer);
+      _UART_Received_CallBack(_sendBuffer, _index);
+      _index = 0;
+    }
+
+    UARTIntClear(UART1_BASE, UART_INT_RX);
+  }
 }

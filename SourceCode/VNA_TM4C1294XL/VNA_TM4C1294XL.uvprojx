@@ -334,7 +334,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>rvmdk PART_TM4C1294NCPDT</Define>
               <Undefine></Undefine>
               <IncludePath>C:\ti\TivaWare_C_Series-2.1.4.178;.\Src\User\Inc</IncludePath>
             </VariousControls>
@@ -385,6 +385,11 @@
               <FileType>4</FileType>
               <FilePath>C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib</FilePath>
             </File>
+            <File>
+              <FileName>uartstdio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -409,6 +414,26 @@
               <FileName>ADC_Driver.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Src\User\Src\ADC_Driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>Led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\User\Src\Led.c</FilePath>
+            </File>
+            <File>
+              <FileName>SPI_Driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\User\Src\SPI_Driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD5110.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\User\Src\LCD5110.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\User\Src\delay.c</FilePath>
             </File>
           </Files>
         </Group>

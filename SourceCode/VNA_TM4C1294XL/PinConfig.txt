@@ -1,6 +1,6 @@
 HC-05 (UART)
     U1Tx - PB1
-    U1Rx - PQ4
+    U1Rx - PB0
 
 BTN (EXTI)
     BTN0 - PL0
@@ -19,9 +19,16 @@ LCD (GPIO)
     CLK - PB5
     LIGHT - PA7
 
-ADF4350 (SPI)
+ADF4350 (SPI0)
     PP3
     PQ1
-    SPI CLK - PD3
-    SPI MISO - PA0
-    SPI MOSI - PD1
+    SSI0Clk - PA2
+    SSI0Fss - PA3
+    SSI0TX - PA4
+    SSI0RX - PA5
+	
+LED
+	LED0 - PN1
+	LED1 - PN0
+	LED2 - PF4
+	LED3 - PF0
