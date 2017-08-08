@@ -53,14 +53,14 @@ uint16_t ADC_readADC1(uint8_t channel)
   return ADC_GetConversionValue(ADC1);
 }
 
-uint16_t ADC_readMag(void)
+float ADC_readMag(void)
 {
 	uint16_t ADC_Value = ADC_readADC1(VMAG);
 	float Voltage = _ADC_to_voltage(ADC_Value);
   return ((Voltage * 60/1.8) - 30);
 }
 
-uint16_t ADC_readPhs(void)
+float ADC_readPhs(void)
 {
 	uint16_t ADC_Value = ADC_readADC1(VMAG);
 	float Voltage = _ADC_to_voltage(ADC_Value);
