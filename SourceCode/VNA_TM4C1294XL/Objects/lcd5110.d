@@ -8,3 +8,10 @@
 .\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h
 .\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/sysctl.h
 .\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/gpio.h
+.\objects\lcd5110.o: .\Src\User\Inc\delay.h
+.\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/interrupt.h
+.\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/pin_map.h
+.\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/systick.h
+.\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/uart.h
+.\objects\lcd5110.o: C:\ti\TivaWare_C_Series-2.1.4.178\utils/uartstdio.h
+.\objects\lcd5110.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

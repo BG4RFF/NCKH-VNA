@@ -16,7 +16,7 @@ int main(void)
                                                25000000);
 
     delay_Init(ui32SysClock);
-		UART_Init(UARTReceived_Callback);
+    UART_Init(UARTReceived_Callback);
     SPI_init();
     Led_Init(led1);
     Led_Init(led2);
@@ -24,14 +24,14 @@ int main(void)
     Led_Init(led4);
     Button_Init(NULL, NULL, NULL);
     ADC_init();
-		LCD5110_init();
+    LCD5110_init();
     InitConsole();
 
     delay_ms(10);
-		
+
     UARTprintf("HELLO WORLD");
     delay_ms(10);
-		UART_SendStr("HELLO WORLD\0");
+    UART_SendStr("HELLO WORLD\0");
 
     /* Welcome screen */
     LCD5110_set_XY(3, 2);

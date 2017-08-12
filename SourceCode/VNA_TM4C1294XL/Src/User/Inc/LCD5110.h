@@ -10,6 +10,7 @@
 #include <inc/hw_memmap.h>
 #include <driverlib/sysctl.h>
 #include <driverlib/gpio.h>
+#include "delay.h"
 
 /*********** Character table ***********/
 static unsigned char font6_8[][6] =

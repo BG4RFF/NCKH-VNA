@@ -142,11 +142,13 @@ void LCD5110_light_off(void)
 void LCD5110_LCD_delay_ms(unsigned int nCount)
 {
     ////////////////////// NOT TESTED
-    unsigned long t;
-    t = nCount * 40000;
-    while (t--)
-    {
-    }
+    // unsigned long t;
+    // t = nCount * 40000;
+    // while (t--)
+    // {
+    // }
+
+    delay_ms(nCount);
 }
 
 void LCD5110_GPIO_Config(void)
