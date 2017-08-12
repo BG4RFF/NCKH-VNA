@@ -4,33 +4,33 @@ void UART_Init(void (*UART_Received_CallBack)(char *, uint8_t))
 {
   _UART_Received_CallBack = UART_Received_CallBack;
 
-  SysCtlPeripheralEnable(SYSCTL_PERIPH_UART1);
-  while (!SysCtlPeripheralReady(SYSCTL_PERIPH_UART1))
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_UART5);
+  while (!SysCtlPeripheralReady(SYSCTL_PERIPH_UART5))
   {
   }
 
-  SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
-  while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOB))
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOC);
+  while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOC))
   {
   }
+	
+	GPIOPinTypeUART(GPIO_PORTC_BASE, GPIO_PIN_6);
+	GPIOPinTypeUART(GPIO_PORTC_BASE, GPIO_PIN_7);
 
-  GPIOPinConfigure(GPIO_PB0_U1RX);
-  GPIOPinConfigure(GPIO_PB1_U1TX);
+  GPIOPinConfigure(GPIO_PC7_U5TX);
+  GPIOPinConfigure(GPIO_PC6_U5RX);
 
-  UARTConfigSetExpClk(UART1_BASE, SysCtlClockGet(), 9600, (UART_CONFIG_WLEN_8 | UART_CONFIG_STOP_ONE | UART_CONFIG_PAR_NONE));
+  UARTConfigSetExpClk(UART5_BASE, 16000000, 115200, (UART_CONFIG_WLEN_8 | UART_CONFIG_STOP_ONE | UART_CONFIG_PAR_NONE));
 
-  UARTIntDisable(UART1_BASE, UART_INT_RX);
-  UARTIntClear(UART1_BASE, UART_INT_RX);
-  UARTIntRegister(UART1_BASE, UART1_Handler);
-  UARTIntEnable(UART1_BASE, UART_INT_RX);
+  UARTIntDisable(UART5_BASE, UART_INT_RX);
+  UARTIntClear(UART5_BASE, UART_INT_RX);
+  UARTIntRegister(UART5_BASE, UART1_Handler);
+  UARTIntEnable(UART5_BASE, UART_INT_RX);
 }
 
 void UART_Send(char ch)
 {
-  while (UARTCharGetNonBlocking(UART1_BASE))
-  {
-  }
-  UARTCharPut(UART1_BASE, (unsigned char)ch);
+  UARTCharPut(UART5_BASE, (unsigned char)ch);
 }
 
 void UART_SendStr(char *str)

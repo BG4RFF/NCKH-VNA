@@ -14,3 +14,6 @@
 #include "SPI_Driver.h"
 #include "LCD5110.h"
 #include "delay.h"
+#include "ScreenStructure.h"
+#include "ScreenManager.h"
+#include "Screens.h"

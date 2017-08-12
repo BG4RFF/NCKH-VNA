@@ -5,27 +5,44 @@ void InitConsole(void);
 
 int main(void)
 {
+    Led led1 = {.ui32Peripheral = LED1_BUILTIN_PERIPHERAL, .ui32Port = LED1_BUILTIN_PORT, .ui32Pin = LED1_BUILTIN_PIN};
+    Led led2 = {.ui32Peripheral = LED2_BUILTIN_PERIPHERAL, .ui32Port = LED2_BUILTIN_PORT, .ui32Pin = LED2_BUILTIN_PIN};
+    Led led3 = {.ui32Peripheral = LED3_BUILTIN_PERIPHERAL, .ui32Port = LED3_BUILTIN_PORT, .ui32Pin = LED3_BUILTIN_PIN};
+    Led led4 = {.ui32Peripheral = LED4_BUILTIN_PERIPHERAL, .ui32Port = LED4_BUILTIN_PORT, .ui32Pin = LED4_BUILTIN_PIN};
+
     uint32_t ui32SysClock = SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ |
                                                 SYSCTL_OSC_MAIN |
                                                 SYSCTL_USE_OSC),
                                                25000000);
 
-		delay_Init(ui32SysClock);
-    UART_Init(UARTReceived_Callback);
+    delay_Init(ui32SysClock);
+		UART_Init(UARTReceived_Callback);
+    SPI_init();
+    Led_Init(led1);
+    Led_Init(led2);
+    Led_Init(led3);
+    Led_Init(led4);
     Button_Init(NULL, NULL, NULL);
-    LCD5110_init();
+    ADC_init();
+		LCD5110_init();
     InitConsole();
-	
-		delay_ms(10);
+
+    delay_ms(10);
+		
+    UARTprintf("HELLO WORLD");
+    delay_ms(10);
+		UART_SendStr("HELLO WORLD\0");
 
     /* Welcome screen */
     LCD5110_set_XY(3, 2);
     LCD5110_write_string("VNA Mini");
     LCD5110_set_XY(4, 3);
     LCD5110_write_string("UIT K9");
+    delay_ms(750);
 
     while (true)
     {
+        ScreenManager_Run();
     }
 }
 

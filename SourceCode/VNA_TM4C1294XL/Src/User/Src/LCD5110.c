@@ -154,7 +154,7 @@ void LCD5110_GPIO_Config(void)
     /* RST - PH0 */
     /* CE - PH1 */
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOH);
-    while (SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOH))
+    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOH))
     {
     }
     GPIOPinTypeGPIOOutput(GPIO_PORTH_BASE, GPIO_PIN_0 | GPIO_PIN_1);
@@ -162,21 +162,21 @@ void LCD5110_GPIO_Config(void)
     /* DC - PK6 */
     /* DIN - PK7 */
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOK);
-    while (SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOK))
+    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOK))
     {
     }
     GPIOPinTypeGPIOOutput(GPIO_PORTK_BASE, GPIO_PIN_6 | GPIO_PIN_7);
 
     /* CLK - PB5 */
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
-    while (SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOB))
+    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOB))
     {
     }
     GPIOPinTypeGPIOOutput(GPIO_PORTB_BASE, GPIO_PIN_5);
 
     /* LIGHT - PA7 */
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
-    while (SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOA))
+    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOA))
     {
     }
     GPIOPinTypeGPIOOutput(GPIO_PORTA_BASE, GPIO_PIN_7);

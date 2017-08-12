@@ -435,6 +435,21 @@
               <FileType>1</FileType>
               <FilePath>.\Src\User\Src\delay.c</FilePath>
             </File>
+            <File>
+              <FileName>ScreenManager.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\User\Src\ScreenManager.c</FilePath>
+            </File>
+            <File>
+              <FileName>ScreenStructure.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\User\Src\ScreenStructure.c</FilePath>
+            </File>
+            <File>
+              <FileName>Screens.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\User\Src\Screens.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

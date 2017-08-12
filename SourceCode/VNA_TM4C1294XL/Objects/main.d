@@ -24,3 +24,6 @@
 .\objects\main.o: .\Src\User\Inc\delay.h
 .\objects\main.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/interrupt.h
 .\objects\main.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/systick.h
+.\objects\main.o: .\Src\User\Inc\ScreenStructure.h
+.\objects\main.o: .\Src\User\Inc\ScreenManager.h
+.\objects\main.o: .\Src\User\Inc\Screens.h
