@@ -1,7 +1,7 @@
 .\objects\spi_driver.o: Src\User\Src\SPI_Driver.c
 .\objects\spi_driver.o: .\Src\User\Inc\SPI_Driver.h
-.\objects\spi_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\spi_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\spi_driver.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\objects\spi_driver.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
 .\objects\spi_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h
 .\objects\spi_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/gpio.h
 .\objects\spi_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/pin_map.h
@@ -9,4 +9,4 @@
 .\objects\spi_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/sysctl.h
 .\objects\spi_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/uart.h
 .\objects\spi_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\utils/uartstdio.h
-.\objects\spi_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\spi_driver.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdarg.h

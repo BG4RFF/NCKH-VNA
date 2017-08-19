@@ -1,0 +1,178 @@
+Dependencies for Project 'VNA_TM4C1294XL', Target 'VNA_TM4C1294XL': (DO NOT MODIFY !)
+F (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib)(0x598BE8E4)()
+F (C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.c)(0x5996CA35)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\uartstdio.o --omf_browse .\objects\uartstdio.crf --depend .\objects\uartstdio.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_ints.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x598BE933)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_uart.h)(0x598BE933)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\debug.h)(0x598BE8E3)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rom.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rom_map.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.h)(0x598BE953)
+F (.\Src\User\Src\main.c)(0x5997ADF5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Src\User\Inc\main.h)(0x598ECB36)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x598BE933)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.h)(0x598BE953)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x53464854)
+I (.\Src\User\Inc\Button_Control.h)(0x598EB549)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x598BE8E4)
+I (.\Src\User\Inc\UART_Driver.h)(0x5997ACF1)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\pin_map.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x598BE8E4)
+I (.\Src\User\Inc\ADC_Driver.h)(0x598EB549)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\adc.h)(0x598BE8E3)
+I (.\Src\User\Inc\Led.h)(0x598EB549)
+I (.\Src\User\Inc\SPI_Driver.h)(0x598EB549)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\ssi.h)(0x598BE8E4)
+I (.\Src\User\Inc\LCD5110.h)(0x5993D595)
+I (.\Src\User\Inc\delay.h)(0x598EB549)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\systick.h)(0x598BE8E4)
+I (.\Src\User\Inc\ScreenStructure.h)(0x598ECB36)
+I (.\Src\User\Inc\ScreenManager.h)(0x598ECB36)
+I (.\Src\User\Inc\Screens.h)(0x598ECB36)
+F (.\Src\User\Src\Button_Control.c)(0x598EB549)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\button_control.o --omf_browse .\objects\button_control.crf --depend .\objects\button_control.d)
+I (.\Src\User\Inc\Button_Control.h)(0x598EB549)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x598BE933)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x598BE8E4)
+F (.\Src\User\Src\UART_Driver.c)(0x5997ACF3)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\uart_driver.o --omf_browse .\objects\uart_driver.crf --depend .\objects\uart_driver.d)
+I (.\Src\User\Inc\UART_Driver.h)(0x5997ACF1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x598BE933)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\pin_map.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x598BE8E4)
+F (.\Src\User\Src\ADC_Driver.c)(0x5996FBDB)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\adc_driver.o --omf_browse .\objects\adc_driver.crf --depend .\objects\adc_driver.d)
+I (.\Src\User\Inc\ADC_Driver.h)(0x598EB549)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x598BE933)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\adc.h)(0x598BE8E3)
+F (.\Src\User\Src\Led.c)(0x598EB549)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (.\Src\User\Inc\Led.h)(0x598EB549)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x598BE933)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x598BE8E4)
+F (.\Src\User\Src\SPI_Driver.c)(0x5997A47C)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\spi_driver.o --omf_browse .\objects\spi_driver.crf --depend .\objects\spi_driver.d)
+I (.\Src\User\Inc\SPI_Driver.h)(0x598EB549)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\pin_map.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\ssi.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.h)(0x598BE953)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x53464854)
+F (.\Src\User\Src\LCD5110.c)(0x5993D595)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\lcd5110.o --omf_browse .\objects\lcd5110.crf --depend .\objects\lcd5110.d)
+I (.\Src\User\Inc\LCD5110.h)(0x5993D595)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x598BE933)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x598BE8E4)
+I (.\Src\User\Inc\delay.h)(0x598EB549)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\pin_map.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\systick.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.h)(0x598BE953)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x53464854)
+F (.\Src\User\Src\delay.c)(0x598EB549)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (.\Src\User\Inc\delay.h)(0x598EB549)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\pin_map.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\systick.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.h)(0x598BE953)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x53464854)
+F (.\Src\User\Src\ScreenManager.c)(0x598ECB36)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\screenmanager.o --omf_browse .\objects\screenmanager.crf --depend .\objects\screenmanager.d)
+I (.\Src\User\Inc\ScreenManager.h)(0x598ECB36)
+I (.\Src\User\Inc\ScreenStructure.h)(0x598ECB36)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
+I (.\Src\User\Inc\Button_Control.h)(0x598EB549)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x598BE933)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x598BE8E4)
+F (.\Src\User\Src\ScreenStructure.c)(0x598ECB36)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\screenstructure.o --omf_browse .\objects\screenstructure.crf --depend .\objects\screenstructure.d)
+I (.\Src\User\Inc\ScreenStructure.h)(0x598ECB36)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
+F (.\Src\User\Src\Screens.c)(0x598ECB36)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\screens.o --omf_browse .\objects\screens.crf --depend .\objects\screens.d)
+I (.\Src\User\Inc\Screens.h)(0x598ECB36)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
+I (.\Src\User\Inc\ScreenStructure.h)(0x598ECB36)
+I (.\Src\User\Inc\ScreenManager.h)(0x598ECB36)
+I (.\Src\User\Inc\Button_Control.h)(0x598EB549)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53464854)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x598BE933)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x598BE8E4)
+I (.\Src\User\Inc\delay.h)(0x598EB549)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\pin_map.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\systick.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x598BE8E4)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.h)(0x598BE953)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x53464854)
+I (.\Src\User\Inc\LCD5110.h)(0x5993D595)
+F (RTE\Device\TM4C1294NCPDT\startup_TM4C129.s)(0x598EB549)(--cpu Cortex-M4.fp -g --apcs=interwork -I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129--list .\listings\startup_tm4c129.lst --xref -o .\objects\startup_tm4c129.o --depend .\objects\startup_tm4c129.d)
+F (RTE\Device\TM4C1294NCPDT\system_TM4C129.c)(0x598EB549)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\system_tm4c129.o --omf_browse .\objects\system_tm4c129.crf --depend .\objects\system_tm4c129.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
+I (C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530EACA6)
+I (C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h)(0x530EACA6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cm4.h)(0x538434D6)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cmInstr.h)(0x5302B0E0)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cmFunc.h)(0x5302B0E0)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include\core_cm4_simd.h)(0x5302B0E0)
+I (C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51BFB89A)

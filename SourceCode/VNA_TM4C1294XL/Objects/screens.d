@@ -1,12 +1,12 @@
 .\objects\screens.o: Src\User\Src\Screens.c
 .\objects\screens.o: .\Src\User\Inc\Screens.h
-.\objects\screens.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\screens.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
 .\objects\screens.o: .\Src\User\Inc\ScreenStructure.h
 .\objects\screens.o: .\Src\User\Inc\ScreenManager.h
 .\objects\screens.o: .\Src\User\Inc\Button_Control.h
-.\objects\screens.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\screens.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\screens.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\screens.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+.\objects\screens.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\objects\screens.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
 .\objects\screens.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_types.h
 .\objects\screens.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h
 .\objects\screens.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/sysctl.h
@@ -17,5 +17,5 @@
 .\objects\screens.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/systick.h
 .\objects\screens.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/uart.h
 .\objects\screens.o: C:\ti\TivaWare_C_Series-2.1.4.178\utils/uartstdio.h
-.\objects\screens.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\screens.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdarg.h
 .\objects\screens.o: .\Src\User\Inc\LCD5110.h

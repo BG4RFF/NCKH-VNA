@@ -1,7 +1,7 @@
 .\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.c
-.\objects\uartstdio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\uartstdio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\uartstdio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\uartstdio.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\objects\uartstdio.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\objects\uartstdio.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdarg.h
 .\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_ints.h
 .\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h
 .\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_types.h

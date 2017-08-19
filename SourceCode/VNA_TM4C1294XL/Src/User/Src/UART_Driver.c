@@ -44,10 +44,11 @@ void UART_SendStr(char *str)
 
 void UART1_Handler(void)
 {
-  if (UARTIntStatus(UART1_BASE, false) & UART_INT_RX)
+	uint32_t a = UARTIntStatus(UART5_BASE, false);
+  if (a & UART_INT_RX)
   {
     if (_index <= RECEIVE_BUFFER_SIZE)
-      _buffer[_index++] = (char)UARTCharGet(UART1_BASE);
+      _buffer[_index++] = (char)UARTCharGet(UART5_BASE);
     if (_buffer[_index - 1] == '\0')
     {
       strcpy(_sendBuffer, _buffer);
@@ -55,6 +56,6 @@ void UART1_Handler(void)
       _index = 0;
     }
 
-    UARTIntClear(UART1_BASE, UART_INT_RX);
+    UARTIntClear(UART5_BASE, UART_INT_RX);
   }
 }

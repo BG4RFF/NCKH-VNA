@@ -19,7 +19,7 @@
 
 /* Variable */
 static void (*_UART_Received_CallBack)(char *, uint8_t);
-static char *_buffer, *_sendBuffer;
+static char _buffer[RECEIVE_BUFFER_SIZE], _sendBuffer[RECEIVE_BUFFER_SIZE];
 static uint8_t _index = 0;
 
 /* Methods */

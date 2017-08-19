@@ -1305,13 +1305,12 @@ ARM Macro Assembler    Page 21
 
 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
-erwork --depend=.\objects\startup_tm4c129.d -o.\objects\startup_tm4c129.o -I.\R
-TE\_VNA_TM4C1294XL -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include -IC:\Kei
-l_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129 --predefine="__UVISION
-_VERSION SETA 524" --predefine="_RTE_ SETA 1" --predefine="TM4C1294NCPDT SETA 1
-" --list=.\listings\startup_tm4c129.lst RTE\Device\TM4C1294NCPDT\startup_TM4C12
-9.s
+Command Line: --debug --xref --cpu=Cortex-M4.fp --apcs=interwork --depend=.\obj
+ects\startup_tm4c129.d -o.\objects\startup_tm4c129.o -ID:\WORK\GitHub\NCKH-VNA\
+SourceCode\VNA_TM4C1294XL\RTE -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Inclu
+de -IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0 -IC:\Keil_v5\ARM\PACK\Keil\TM4C_DF
+P\1.1.0\Device\Include\TM4C129 --list=.\listings\startup_tm4c129.lst RTE\Device
+\TM4C1294NCPDT\startup_TM4C129.s
 
 
 
@@ -2791,4 +2790,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-487 symbols in table
+484 symbols in table

@@ -1,10 +1,10 @@
 .\objects\uart_driver.o: Src\User\Src\UART_Driver.c
 .\objects\uart_driver.o: .\Src\User\Inc\UART_Driver.h
-.\objects\uart_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\uart_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\uart_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\uart_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\uart_driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\uart_driver.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
+.\objects\uart_driver.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+.\objects\uart_driver.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\objects\uart_driver.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\objects\uart_driver.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\string.h
 .\objects\uart_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_types.h
 .\objects\uart_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h
 .\objects\uart_driver.o: C:\ti\TivaWare_C_Series-2.1.4.178\driverlib/sysctl.h

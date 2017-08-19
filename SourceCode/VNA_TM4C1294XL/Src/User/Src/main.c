@@ -10,10 +10,15 @@ int main(void)
     Led led3 = {.ui32Peripheral = LED3_BUILTIN_PERIPHERAL, .ui32Port = LED3_BUILTIN_PORT, .ui32Pin = LED3_BUILTIN_PIN};
     Led led4 = {.ui32Peripheral = LED4_BUILTIN_PERIPHERAL, .ui32Port = LED4_BUILTIN_PORT, .ui32Pin = LED4_BUILTIN_PIN};
 
-    uint32_t ui32SysClock = SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ |
-                                                SYSCTL_OSC_MAIN |
-                                                SYSCTL_USE_OSC),
-                                               25000000);
+//    uint32_t ui32SysClock = SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ |
+//                                                SYSCTL_OSC_MAIN |
+//                                                SYSCTL_USE_OSC),
+//                                               16000000);
+		
+		uint32_t ui32SysClock = SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ |
+                                       SYSCTL_OSC_MAIN |
+                                       SYSCTL_USE_PLL |
+                                       SYSCTL_CFG_VCO_480), 16000000);
 
     delay_Init(ui32SysClock);
     UART_Init(UARTReceived_Callback);
@@ -42,7 +47,8 @@ int main(void)
 
     while (true)
     {
-        ScreenManager_Run();
+			UARTprintf("ADC: %u", ADC_readMag());
+			delay_ms(1000);
     }
 }
 
@@ -77,7 +83,7 @@ void InitConsole(void)
     //
     // Use the internal 16MHz oscillator as the UART clock source.
     //
-    UARTClockSourceSet(UART0_BASE, UART_CLOCK_PIOSC);
+    //UARTClockSourceSet(UART0_BASE, UART_CLOCK_PIOSC);
 
     //
     // Select the alternate (UART) function for these pins.
