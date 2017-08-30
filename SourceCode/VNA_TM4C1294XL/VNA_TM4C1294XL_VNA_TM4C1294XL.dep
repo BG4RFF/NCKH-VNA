@@ -15,7 +15,7 @@ I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rom_map.h)(0x598BE8E4)
 I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
 I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x598BE8E4)
 I (C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.h)(0x598BE953)
-F (.\Src\User\Src\main.c)(0x5997ADF5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\Src\User\Src\main.c)(0x59A70057)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\Src\User\Inc\main.h)(0x598ECB36)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53464854)
@@ -100,7 +100,7 @@ I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x598BFD9F)
 I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x598BE8E4)
 I (C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.h)(0x598BE953)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x53464854)
-F (.\Src\User\Src\LCD5110.c)(0x5993D595)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\lcd5110.o --omf_browse .\objects\lcd5110.crf --depend .\objects\lcd5110.d)
+F (.\Src\User\Src\LCD5110.c)(0x59A70036)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\lcd5110.o --omf_browse .\objects\lcd5110.crf --depend .\objects\lcd5110.d)
 I (.\Src\User\Inc\LCD5110.h)(0x5993D595)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53464854)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53464854)
@@ -166,8 +166,8 @@ I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x598BE8E4)
 I (C:\ti\TivaWare_C_Series-2.1.4.178\utils\uartstdio.h)(0x598BE953)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x53464854)
 I (.\Src\User\Inc\LCD5110.h)(0x5993D595)
-F (RTE\Device\TM4C1294NCPDT\startup_TM4C129.s)(0x598EB549)(--cpu Cortex-M4.fp -g --apcs=interwork -I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129--list .\listings\startup_tm4c129.lst --xref -o .\objects\startup_tm4c129.o --depend .\objects\startup_tm4c129.d)
-F (RTE\Device\TM4C1294NCPDT\system_TM4C129.c)(0x598EB549)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\system_tm4c129.o --omf_browse .\objects\system_tm4c129.crf --depend .\objects\system_tm4c129.d)
+F (RTE\Device\TM4C1294NCPDT\startup_TM4C129.s)(0x51BFB89A)(--cpu Cortex-M4.fp -g --apcs=interwork -I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129--list .\listings\startup_tm4c129.lst --xref -o .\objects\startup_tm4c129.o --depend .\objects\startup_tm4c129.d)
+F (RTE\Device\TM4C1294NCPDT\system_TM4C129.c)(0x525365D4)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.4.178 -I.\Src\User\Inc-I D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT-o .\objects\system_tm4c129.o --omf_browse .\objects\system_tm4c129.crf --depend .\objects\system_tm4c129.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53464854)
 I (C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530EACA6)
 I (C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h)(0x530EACA6)

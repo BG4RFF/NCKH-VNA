@@ -38,7 +38,7 @@ void LCD5110_LCD_write_byte(unsigned char dat, unsigned char mode)
 
     for (i = 0; i < 8; i++)
     {
-        LCD5110_DIN(dat & 0x80); // SPI_MO = dat & 0x80;
+        LCD5110_DIN((dat & 0x80) >> 7); // SPI_MO = dat & 0x80;
         dat = dat << 1;
         LCD5110_CLK(0); // SPI_SCK = 0;
         LCD5110_CLK(1); // SPI_SCK = 1;
@@ -187,35 +187,35 @@ void LCD5110_GPIO_Config(void)
 void LCD5110_CLK(unsigned char temp)
 {
     /* CLK - PB5 */
-    GPIOPinWrite(GPIO_PORTB_BASE, GPIO_PIN_5, (temp ? 1 : 0));
+    GPIOPinWrite(GPIO_PORTB_BASE, GPIO_PIN_5, temp << 5);
 }
 
 void LCD5110_DIN(unsigned char temp)
 {
     /* DIN - PK7 */
-    GPIOPinWrite(GPIO_PORTK_BASE, GPIO_PIN_7, (temp ? 1 : 0));
+    GPIOPinWrite(GPIO_PORTK_BASE, GPIO_PIN_7, temp << 7);
 }
 
 void LCD5110_CE(unsigned char temp)
 {
     /* CE - PH1 */
-    GPIOPinWrite(GPIO_PORTH_BASE, GPIO_PIN_1, (temp ? 1 : 0));
+    GPIOPinWrite(GPIO_PORTH_BASE, GPIO_PIN_1, temp << 1);
 }
 
 void LCD5110_RST(unsigned char temp)
 {
     /* RST - PH0 */
-    GPIOPinWrite(GPIO_PORTH_BASE, GPIO_PIN_0, (temp ? 1 : 0));
+    GPIOPinWrite(GPIO_PORTH_BASE, GPIO_PIN_0, temp << 0);
 }
 
 void LCD5110_DC(unsigned char temp)
 {
     /* DC - PK6 */
-    GPIOPinWrite(GPIO_PORTK_BASE, GPIO_PIN_6, (temp ? 1 : 0));
+    GPIOPinWrite(GPIO_PORTK_BASE, GPIO_PIN_6, temp << 6);
 }
 
 void LCD5110_LIGHT(unsigned char temp)
 {
     /* LIGHT - PA7 */
-    GPIOPinWrite(GPIO_PORTA_BASE, GPIO_PIN_7, (temp ? 1 : 0));
+    GPIOPinWrite(GPIO_PORTA_BASE, GPIO_PIN_7, (temp << 7)^(1 << 7));
 }
