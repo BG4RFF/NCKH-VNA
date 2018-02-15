@@ -153,69 +153,81 @@ void LCD5110_LCD_delay_ms(unsigned int nCount)
 
 void LCD5110_GPIO_Config(void)
 {
-    /* RST - PH0 */
-    /* CE - PH1 */
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOH);
-    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOH))
+    /* RST */
+    SysCtlPeripheralEnable(LCD_RST_SYSCTL_PERIPH);
+    while (!SysCtlPeripheralReady(LCD_RST_SYSCTL_PERIPH))
     {
     }
-    GPIOPinTypeGPIOOutput(GPIO_PORTH_BASE, GPIO_PIN_0 | GPIO_PIN_1);
+    GPIOPinTypeGPIOOutput(LCD_RST_PORT, LCD_RST_PIN);
 
-    /* DC - PK6 */
-    /* DIN - PK7 */
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOK);
-    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOK))
+    /* CE */
+    SysCtlPeripheralEnable(LCD_CE_SYSCTL_PERIPH);
+    while (!SysCtlPeripheralReady(LCD_CE_SYSCTL_PERIPH))
     {
     }
-    GPIOPinTypeGPIOOutput(GPIO_PORTK_BASE, GPIO_PIN_6 | GPIO_PIN_7);
+    GPIOPinTypeGPIOOutput(LCD_CE_PORT, LCD_CE_PIN);
 
-    /* CLK - PB5 */
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
-    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOB))
+    /* DC */
+    SysCtlPeripheralEnable(LCD_DC_SYSCTL_PERIPH);
+    while (!SysCtlPeripheralReady(LCD_DC_SYSCTL_PERIPH))
     {
     }
-    GPIOPinTypeGPIOOutput(GPIO_PORTB_BASE, GPIO_PIN_5);
+    GPIOPinTypeGPIOOutput(LCD_DC_PORT, LCD_DC_PIN);
 
-    /* LIGHT - PA7 */
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
-    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOA))
+    /* DIN */
+    SysCtlPeripheralEnable(LCD_DIN_SYSCTL_PERIPH);
+    while (!SysCtlPeripheralReady(LCD_DIN_SYSCTL_PERIPH))
     {
     }
-    GPIOPinTypeGPIOOutput(GPIO_PORTA_BASE, GPIO_PIN_7);
+    GPIOPinTypeGPIOOutput(LCD_DIN_PORT, LCD_DIN_PIN);
+
+    /* CLK */
+    SysCtlPeripheralEnable(LCD_CLK_SYSCTL_PERIPH);
+    while (!SysCtlPeripheralReady(LCD_CLK_SYSCTL_PERIPH))
+    {
+    }
+    GPIOPinTypeGPIOOutput(LCD_CLK_PORT, LCD_CLK_PIN);
+
+    /* LIGHT */
+    SysCtlPeripheralEnable(LCD_LIGHT_SYSCTL_PERIPH);
+    while (!SysCtlPeripheralReady(LCD_LIGHT_SYSCTL_PERIPH))
+    {
+    }
+    GPIOPinTypeGPIOOutput(LCD_LIGHT_PORT, LCD_LIGHT_PIN);
 }
 
 void LCD5110_CLK(unsigned char temp)
 {
     /* CLK - PB5 */
-    GPIOPinWrite(GPIO_PORTB_BASE, GPIO_PIN_5, temp << 5);
+    GPIOPinWrite(LCD_CLK_PORT, LCD_CLK_PIN, temp ? LCD_CLK_PIN : 0);
 }
 
 void LCD5110_DIN(unsigned char temp)
 {
     /* DIN - PK7 */
-    GPIOPinWrite(GPIO_PORTK_BASE, GPIO_PIN_7, temp << 7);
+    GPIOPinWrite(LCD_DIN_PORT, LCD_DIN_PIN, temp ? LCD_DIN_PIN : 0);
 }
 
 void LCD5110_CE(unsigned char temp)
 {
     /* CE - PH1 */
-    GPIOPinWrite(GPIO_PORTH_BASE, GPIO_PIN_1, temp << 1);
+    GPIOPinWrite(LCD_CE_PORT, LCD_CE_PIN, temp ? LCD_CE_PIN : 0);
 }
 
 void LCD5110_RST(unsigned char temp)
 {
     /* RST - PH0 */
-    GPIOPinWrite(GPIO_PORTH_BASE, GPIO_PIN_0, temp << 0);
+    GPIOPinWrite(LCD_RST_PORT, LCD_RST_PIN, temp ? LCD_RST_PIN : 0);
 }
 
 void LCD5110_DC(unsigned char temp)
 {
     /* DC - PK6 */
-    GPIOPinWrite(GPIO_PORTK_BASE, GPIO_PIN_6, temp << 6);
+    GPIOPinWrite(LCD_DC_PORT, LCD_DC_PIN, temp ? LCD_DC_PIN : 0);
 }
 
 void LCD5110_LIGHT(unsigned char temp)
 {
     /* LIGHT - PA7 */
-    GPIOPinWrite(GPIO_PORTA_BASE, GPIO_PIN_7, (temp << 7)^(1 << 7));
+    GPIOPinWrite(LCD_LIGHT_PORT, LCD_LIGHT_PIN, temp ? 0 : LCD_LIGHT_PIN);
 }

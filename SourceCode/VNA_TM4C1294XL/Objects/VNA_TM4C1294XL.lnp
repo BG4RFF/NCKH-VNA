@@ -1,4 +1,4 @@
---cpu Cortex-M4.fp
+--cpu=Cortex-M4.fp
 "C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib"
 ".\objects\uartstdio.o"
 ".\objects\main.o"
@@ -6,15 +6,16 @@
 ".\objects\uart_driver.o"
 ".\objects\adc_driver.o"
 ".\objects\led.o"
-".\objects\spi_driver.o"
 ".\objects\lcd5110.o"
 ".\objects\delay.o"
-".\objects\screenmanager.o"
-".\objects\screenstructure.o"
-".\objects\screens.o"
+".\objects\jsmn.o"
+".\objects\jsonobject.o"
+".\objects\hc05_driver.o"
+".\objects\softwarespi.o"
+".\objects\adf4350.o"
 ".\objects\startup_tm4c129.o"
 ".\objects\system_tm4c129.o"
---strict --scatter ".\Objects\VNA_TM4C1294XL.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--library_type=microlib --strict --scatter ".\Objects\VNA_TM4C1294XL.sct"
+--entry Reset_Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\VNA_TM4C1294XL.map" -o .\Objects\VNA_TM4C1294XL.axf

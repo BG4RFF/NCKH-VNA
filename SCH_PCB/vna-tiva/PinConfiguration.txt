@@ -1,0 +1,35 @@
+HC-05 (UART)
+    EN - 79 - PL5
+	RXD - 28 - U4TX
+	TXD - 26 - U4RX
+	STATE - 10 - PA4
+
+BTN (EXTI)
+    BTN0 - 25 - PA6
+    BTN1 - 92 - PM4
+    BTN2 - 90 - PM5
+
+AD8302 (ADC)
+    VPHS - 32 - PK3 - AIN19
+	VMAG - 30 - PK2 - AIN18
+
+LCD (GPIO)
+    RST - 12 - PA5
+    CE - 14 - PE0
+    DC - 16 - PE1
+    DIN - 18 - PE2
+    CLK - 20 - PE3
+    LIGHT - 38 - PD5
+
+ADF4350 (Software)
+    CE - 44 - PD6
+	LE - 46 - PD3
+	CLK - 48 - PD1
+	MUX - 50 - PD0
+	DAT - 52 - PD2
+	
+LED
+	LED0 - PN1
+	LED1 - PN0
+	LED2 - PF4
+	LED3 - PF0

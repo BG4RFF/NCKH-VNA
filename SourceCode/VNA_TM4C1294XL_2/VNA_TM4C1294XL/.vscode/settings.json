@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "button_control.h": "c",
+        "led.c": "cpp",
+        "screenstructure.h": "c",
+        "uart_driver.h": "c"
+    }
+}

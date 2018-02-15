@@ -1,0 +1,7 @@
+#Mon Nov 20 15:09:48 ICT 2017
+base.0=D\:\\NCKH-2017\\SourceCode\\Android Application\\TestBluetooth\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_c86adeb5219932b4c7731e8a19c1956cccca1e8a
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\NCKH-2017\\SourceCode\\Android Application\\TestBluetooth\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3cdb56db134b5e3b31a8b04fc2563d18dca7db93\\classes.dex
+base.1=D\:\\NCKH-2017\\SourceCode\\Android Application\\TestBluetooth\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3cdb56db134b5e3b31a8b04fc2563d18dca7db93
+file.0=D\:\\NCKH-2017\\SourceCode\\Android Application\\TestBluetooth\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_c86adeb5219932b4c7731e8a19c1956cccca1e8a\\classes.dex

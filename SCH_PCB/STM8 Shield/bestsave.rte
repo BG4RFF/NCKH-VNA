@@ -1,0 +1,321 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00000 
+   (rule
+   )
+   (wire (path TOP 25400  -2750000 6000000 -3556000 6000000 -3556000 5195000
+     -3700000 5195000)
+    (connect (terminal pin J1-0) (terminal smd STM1-19))
+   )
+   (wire (path TOP 25400  -2250000 6006000 -2403500 6159500 -2590500 6159500
+     -2750000 6000000)
+    (connect (terminal pin J4-0) (terminal pin J1-0))
+    (attr bus)
+   )
+   )
+   (Net #00001 
+   (rule
+   )
+   (wire (path TOP 25400  -2750000 5746000 -3365500 5746000 -3365500 5130000
+     -3700000 5130000)
+    (connect (terminal pin J1-1) (terminal smd STM1-18))
+   )
+   (wire (path TOP 25400  -2250000 5752000 -2476500 5752000 -2482500 5746000
+     -2750000 5746000)
+    (connect (terminal pin J4-1) (terminal pin J1-1))
+    (attr bus)
+   )
+   )
+   (Net #00002 
+   (rule
+   )
+   (wire (path TOP 25400  -2750000 5492000 -3238500 5492000 -3238500 5065000
+     -3700000 5065000)
+    (connect (terminal pin J1-2) (terminal smd STM1-17))
+   )
+   (wire (path TOP 25400  -2250000 5498000 -2413000 5498000 -2419000 5492000
+     -2750000 5492000)
+    (connect (terminal pin J4-2) (terminal pin J1-2))
+    (attr bus)
+   )
+   )
+   (Net #00003 
+   (rule
+   )
+   (wire (path TOP 25400  -2750000 5238000 -3003490 5238000 -3003490 5000000
+     -3700000 5000000)
+    (connect (terminal pin J1-3) (terminal smd STM1-16))
+   )
+   (wire (path TOP 25400  -2250000 5244000 -2413000 5244000 -2419000 5238000
+     -2750000 5238000)
+    (connect (terminal pin J4-3) (terminal pin J1-3))
+    (attr bus)
+   )
+   )
+   (Net #00004 
+   (rule
+   )
+   (wire (path TOP 25400  -2750000 4984000 -2750000 4935000 -3700000 4935000)
+    (connect (terminal pin J1-4) (terminal smd STM1-15))
+   )
+   (wire (path TOP 25400  -2250000 4990000 -2413000 4990000 -2419000 4984000
+     -2750000 4984000)
+    (connect (terminal pin J4-4) (terminal pin J1-4))
+    (attr bus)
+   )
+   )
+   (Net #00005 
+   (rule
+   )
+   (wire (path TOP 25400  -2750000 4730000 -2984500 4730000 -2984500 4870000
+     -3700000 4870000)
+    (connect (terminal pin J1-5) (terminal smd STM1-14))
+   )
+   (wire (path TOP 25400  -2250000 4736000 -2413000 4736000 -2419000 4730000
+     -2750000 4730000)
+    (connect (terminal pin J4-5) (terminal pin J1-5))
+    (attr bus)
+   )
+   )
+   (Net #00006 
+   (rule
+   )
+   (wire (path TOP 25400  -2750000 4476000 -3111500 4476000 -3111500 4805000
+     -3700000 4805000)
+    (connect (terminal pin J1-6) (terminal smd STM1-13))
+   )
+   (wire (path TOP 25400  -2250000 4482000 -2413000 4482000 -2419000 4476000
+     -2750000 4476000)
+    (connect (terminal pin J4-6) (terminal pin J1-6))
+    (attr bus)
+   )
+   )
+   (Net #00007 
+   (rule
+   )
+   (wire (path TOP 25400  -2750000 4222000 -3299685 4222000 -3299685 4740000
+     -3700000 4740000)
+    (connect (terminal pin J1-7) (terminal smd STM1-12))
+   )
+   (wire (path TOP 25400  -2250000 4228000 -2413000 4228000 -2419000 4222000
+     -2750000 4222000)
+    (connect (terminal pin J4-7) (terminal pin J1-7))
+    (attr bus)
+   )
+   )
+   (Net #00008 
+   (rule
+   )
+   (wire (path TOP 25400  -2750000 3968000 -3431869 3968000 -3431869 4675000
+     -3700000 4675000)
+    (connect (terminal pin J1-8) (terminal smd STM1-11))
+   )
+   (wire (path TOP 25400  -2250000 3974000 -2413000 3974000 -2419000 3968000
+     -2750000 3968000)
+    (connect (terminal pin J4-8) (terminal pin J1-8))
+    (attr bus)
+   )
+   )
+   (Net #00009 
+   (rule
+   )
+   (wire (path TOP 25400  -2750000 3714000 -3556000 3714000 -3556000 4610000
+     -3700000 4610000)
+    (connect (terminal pin J1-9) (terminal smd STM1-10))
+   )
+   (wire (path TOP 25400  -2250000 3720000 -2413000 3720000 -2419000 3714000
+     -2750000 3714000)
+    (connect (terminal pin J4-9) (terminal pin J1-9))
+    (attr bus)
+   )
+   )
+   (Net #00010 
+   (rule
+   )
+   (wire (path TOP 25400  -5250000 3714000 -4485409 3714000 -4485409 4610000
+     -4250000 4610000)
+    (connect (terminal pin J2-0) (terminal smd STM1-9))
+   )
+   (wire (path TOP 25400  -5250000 3714000 -5461000 3714000 -5465000 3710000
+     -5760000 3710000)
+    (connect (terminal pin J2-0) (terminal pin J3-0))
+    (attr bus)
+   )
+   )
+   (Net #00011 
+   (rule
+   )
+   (wire (path TOP 25400  -5250000 3968000 -4635500 3968000 -4635500 4675000
+     -4250000 4675000)
+    (connect (terminal pin J2-1) (terminal smd STM1-8))
+   )
+   (wire (path TOP 25400  -5250000 3968000 -5397500 3968000 -5401500 3964000
+     -5760000 3964000)
+    (connect (terminal pin J2-1) (terminal pin J3-1))
+    (attr bus)
+   )
+   )
+   (Net #00012 
+   (rule
+   )
+   (wire (path TOP 25400  -5250000 4222000 -4706408 4222000 -4706408 4740000
+     -4250000 4740000)
+    (connect (terminal pin J2-2) (terminal smd STM1-7))
+   )
+   (wire (path TOP 25400  -5250000 4222000 -5397500 4222000 -5401500 4218000
+     -5760000 4218000)
+    (connect (terminal pin J2-2) (terminal pin J3-2))
+    (attr bus)
+   )
+   )
+   (Net #00013 
+   (rule
+   )
+   (wire (path TOP 25400  -5250000 4476000 -4889500 4476000 -4889500 4805000
+     -4250000 4805000)
+    (connect (terminal pin J2-3) (terminal smd STM1-6))
+   )
+   (wire (path TOP 25400  -5250000 4476000 -5397500 4476000 -5401500 4472000
+     -5760000 4472000)
+    (connect (terminal pin J2-3) (terminal pin J3-3))
+    (attr bus)
+   )
+   )
+   (Net #00014 
+   (rule
+   )
+   (wire (path TOP 25400  -5250000 4730000 -4992434 4730000 -4992434 4870000
+     -4250000 4870000)
+    (connect (terminal pin J2-4) (terminal smd STM1-5))
+   )
+   (wire (path TOP 25400  -5250000 4730000 -5397500 4730000 -5401500 4726000
+     -5760000 4726000)
+    (connect (terminal pin J2-4) (terminal pin J3-4))
+    (attr bus)
+   )
+   )
+   (Net #00015 
+   (rule
+   )
+   (wire (path TOP 25400  -5250000 4984000 -5250000 4935000 -4250000 4935000)
+    (connect (terminal pin J2-5) (terminal smd STM1-4))
+   )
+   (wire (path TOP 25400  -5250000 4984000 -5397500 4984000 -5401500 4980000
+     -5760000 4980000)
+    (connect (terminal pin J2-5) (terminal pin J3-5))
+    (attr bus)
+   )
+   )
+   (Net #00016 
+   (rule
+   )
+   (wire (path TOP 25400  -5250000 5238000 -4953000 5238000 -4953000 5000000
+     -4250000 5000000)
+    (connect (terminal pin J2-6) (terminal smd STM1-3))
+   )
+   (wire (path TOP 25400  -5250000 5238000 -5397500 5238000 -5401500 5234000
+     -5760000 5234000)
+    (connect (terminal pin J2-6) (terminal pin J3-6))
+    (attr bus)
+   )
+   )
+   (Net #00017 
+   (rule
+   )
+   (wire (path TOP 25400  -5250000 5492000 -4815148 5492000 -4815148 5065000
+     -4250000 5065000)
+    (connect (terminal pin J2-7) (terminal smd STM1-2))
+   )
+   (wire (path TOP 25400  -5250000 5492000 -5397500 5492000 -5401500 5488000
+     -5760000 5488000)
+    (connect (terminal pin J2-7) (terminal pin J3-7))
+    (attr bus)
+   )
+   )
+   (Net #00018 
+   (rule
+   )
+   (wire (path TOP 25400  -5250000 5746000 -4635500 5746000 -4635500 5130000
+     -4250000 5130000)
+    (connect (terminal pin J2-8) (terminal smd STM1-1))
+   )
+   (wire (path TOP 25400  -5250000 5746000 -5397500 5746000 -5401500 5742000
+     -5760000 5742000)
+    (connect (terminal pin J2-8) (terminal pin J3-8))
+    (attr bus)
+   )
+   )
+   (Net #00019 
+   (rule
+   )
+   (wire (path TOP 25400  -5250000 6000000 -4468975 6000000 -4468975 5195000
+     -4250000 5195000)
+    (connect (terminal pin J2-9) (terminal smd STM1-0))
+   )
+   (wire (path TOP 25400  -5250000 6000000 -5409500 6159500 -5596500 6159500
+     -5760000 5996000)
+    (connect (terminal pin J2-9) (terminal pin J3-9))
+    (attr bus)
+   )
+   )
+  )
+ )

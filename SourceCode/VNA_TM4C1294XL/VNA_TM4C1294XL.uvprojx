@@ -10,10 +10,14 @@
       <TargetName>VNA_TM4C1294XL</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060528::V5.06 update 5 (build 528)::ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>TM4C1294NCPDT</Device>
           <Vendor>Texas Instruments</Vendor>
+          <PackID>Keil.TM4C_DFP.1.1.0</PackID>
+          <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x040000) IROM(0x00000000,0x100000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -76,12 +80,14 @@
             <nStopB2X>0</nStopB2X>
           </BeforeMake>
           <AfterMake>
-            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name></UserProg1Name>
+            <UserProg1Name>fromelf --bin --output .\Objects\VNA_TM4C1294XL.bin .\Objects\VNA_TM4C1294XL.axf</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopA1X>0</nStopA1X>
+            <nStopA2X>0</nStopA2X>
           </AfterMake>
           <SelectedForBatchBuild>0</SelectedForBatchBuild>
           <SVCSIdString></SVCSIdString>
@@ -120,48 +126,6 @@
             <HexOffset>0</HexOffset>
             <Oh166RecLen>16</Oh166RecLen>
           </OPTHX>
-          <Simulator>
-            <UseSimulator>0</UseSimulator>
-            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>1</RunToMain>
-            <RestoreBreakpoints>1</RestoreBreakpoints>
-            <RestoreWatchpoints>1</RestoreWatchpoints>
-            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
-            <RestoreFunctions>1</RestoreFunctions>
-            <RestoreToolbox>1</RestoreToolbox>
-            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
-            <RestoreSysVw>1</RestoreSysVw>
-          </Simulator>
-          <Target>
-            <UseTarget>1</UseTarget>
-            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>1</RunToMain>
-            <RestoreBreakpoints>1</RestoreBreakpoints>
-            <RestoreWatchpoints>1</RestoreWatchpoints>
-            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
-            <RestoreFunctions>0</RestoreFunctions>
-            <RestoreToolbox>1</RestoreToolbox>
-            <RestoreTracepoints>1</RestoreTracepoints>
-            <RestoreSysVw>1</RestoreSysVw>
-            <UsePdscDebugDescription>1</UsePdscDebugDescription>
-          </Target>
-          <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>3</TargetSelection>
-          <SimDlls>
-            <CpuDll></CpuDll>
-            <CpuDllArguments></CpuDllArguments>
-            <PeripheralDll></PeripheralDll>
-            <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
-          </SimDlls>
-          <TargetDlls>
-            <CpuDll></CpuDll>
-            <CpuDllArguments></CpuDllArguments>
-            <PeripheralDll></PeripheralDll>
-            <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
-            <Driver>BIN\lmidk-agdi.dll</Driver>
-          </TargetDlls>
         </DebugOption>
         <Utilities>
           <Flash1>
@@ -223,9 +187,10 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
+            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -358,13 +323,20 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>1</uC99>
+            <uC99>0</uC99>
             <useXO>0</useXO>
+            <v6Lang>1</v6Lang>
+            <v6LangP>1</v6LangP>
+            <vShortEn>1</vShortEn>
+            <vShortWch>1</vShortWch>
+            <v6Lto>0</v6Lto>
+            <v6WtE>0</v6WtE>
+            <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls></MiscControls>
-              <Define>rvmdk PART_TM4C1294NCPDT</Define>
+              <MiscControls>--c99</MiscControls>
+              <Define>rvmdk PART_TM4C1294NCPDT TARGET_IS_TM4C129_RA1</Define>
               <Undefine></Undefine>
-              <IncludePath>C:\ti\TivaWare_C_Series-2.1.4.178;.\Src\User\Inc</IncludePath>
+              <IncludePath>C:\ti\TivaWare_C_Series-2.1.4.178;.\Src\User\Inc;C:\ti\TivaWare_C_Series-2.1.4.178\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -377,6 +349,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -385,7 +358,7 @@
             </VariousControls>
           </Aads>
           <LDads>
-            <umfTarg>1</umfTarg>
+            <umfTarg>0</umfTarg>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
             <noStLib>0</noStLib>
@@ -394,10 +367,10 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile></ScatterFile>
+            <ScatterFile>.\Objects\VNA_TM4C1294XL.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
-            <Misc></Misc>
+            <Misc>--entry Reset_Handler</Misc>
             <LinkerInputFile></LinkerInputFile>
             <DisabledWarnings></DisabledWarnings>
           </LDads>
@@ -448,11 +421,6 @@
               <FilePath>.\Src\User\Src\Led.c</FilePath>
             </File>
             <File>
-              <FileName>SPI_Driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Src\User\Src\SPI_Driver.c</FilePath>
-            </File>
-            <File>
               <FileName>LCD5110.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Src\User\Src\LCD5110.c</FilePath>
@@ -463,19 +431,29 @@
               <FilePath>.\Src\User\Src\delay.c</FilePath>
             </File>
             <File>
-              <FileName>ScreenManager.c</FileName>
+              <FileName>jsmn.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Src\User\Src\ScreenManager.c</FilePath>
+              <FilePath>.\Src\User\Src\jsmn.c</FilePath>
             </File>
             <File>
-              <FileName>ScreenStructure.c</FileName>
+              <FileName>JSONObject.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Src\User\Src\ScreenStructure.c</FilePath>
+              <FilePath>.\Src\User\Src\JSONObject.c</FilePath>
             </File>
             <File>
-              <FileName>Screens.c</FileName>
+              <FileName>HC05_Driver.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Src\User\Src\Screens.c</FilePath>
+              <FilePath>.\Src\User\Src\HC05_Driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>SoftwareSPI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\User\Src\SoftwareSPI.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADF4350.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\User\Src\ADF4350.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -484,18 +462,6 @@
         </Group>
         <Group>
           <GroupName>::Device</GroupName>
-          <Files>
-            <File>
-              <FileName>startup_TM4C129.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>RTE\Device\TM4C1294NCPDT\startup_TM4C129.s</FilePath>
-            </File>
-            <File>
-              <FileName>system_TM4C129.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>RTE\Device\TM4C1294NCPDT\system_TM4C129.c</FilePath>
-            </File>
-          </Files>
         </Group>
       </Groups>
     </Target>

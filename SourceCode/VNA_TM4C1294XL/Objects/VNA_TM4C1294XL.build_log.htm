@@ -2,59 +2,79 @@
 <body>
 <pre>
 <h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Thao Nguyen, UIT, LIC=ATTHL-04C4K-LPCZV-PDS18-N60JY-G0QVV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
 <h2>Project:</h2>
-D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\VNA_TM4C1294XL.uvprojx
-Project File Date:  08/31/2017
+D:\NCKH-2017\SourceCode\VNA_TM4C1294XL\VNA_TM4C1294XL.uvprojx
+Project File Date:  10/13/2017
 
 <h2>Output:</h2>
-Build target 'VNA_TM4C1294XL'
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'VNA_TM4C1294XL'
+compiling Led.c...
+compiling ADC_Driver.c...
+compiling Button_Control.c...
+compiling LCD5110.c...
+compiling delay.c...
+compiling JSONObject.c...
+compiling jsmn.c...
+compiling uartstdio.c...
+compiling SoftwareSPI.c...
+compiling UART_Driver.c...
+compiling ADF4350.c...
+assembling startup_TM4C129.s...
 compiling main.c...
+compiling HC05_Driver.c...
+compiling system_TM4C129.c...
 linking...
-Program Size: Code=6240 RO-data=2184 RW-data=1644 ZI-data=820  
+Program Size: Code=16208 RO-data=2336 RW-data=2668 ZI-data=74332  
+After Build - User command #1: fromelf --bin --output .\Objects\VNA_TM4C1294XL.bin .\Objects\VNA_TM4C1294XL.axf
 ".\Objects\VNA_TM4C1294XL.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.4.1.0.pack
-                ARM::CMSIS:CORE:3.30.0
+                http://www.keil.com/pack/ARM.CMSIS.5.1.1.pack
+                ARM.CMSIS.5.1.1
                 CMSIS (Cortex Microcontroller Software Interface Standard)
-   * Component: CORE Version: 3.30.0
+   * Component: CORE Version: 5.0.2
 
 Package Vendor: Keil
                 http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
-                Keil::Device:Startup:1.0.0
+                Keil.TM4C_DFP.1.1.0
                 Texas Instruments Tiva C Series Device Support and Examples
    * Component: Startup Version: 1.0.0
 
 <h2>Collection of Component include folders:</h2>
-  D:\WORK\GitHub\NCKH-VNA\SourceCode\VNA_TM4C1294XL\RTE
-  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
-  C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0
+  .\RTE\_VNA_TM4C1294XL
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include
   C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:3.30.0
-      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
-
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\system_TM4C129.c
       Include file:  Device\Include\TM4C129\TM4C129.h
       Source file:   Device\Source\ARM\startup_TM4C129.s
-Load "D:\\WORK\\GitHub\\NCKH-VNA\\SourceCode\\VNA_TM4C1294XL\\Objects\\VNA_TM4C1294XL.axf" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
+      Source file:   Device\Source\system_TM4C129.c
+
+   * Component: ARM::CMSIS:CORE:5.0.2
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>
- file:   Device\Source\system_TM4C129.c
-      Include file:  Device\Include\TM4C129\TM4C129.h
-      Source file:   Device\Source\ARM\startup_TM4C129.s
-Load "D:\\WORK\\GitHub\\NCKH-VNA\\SourceCode\\VNA_TM4C1294XL\\Objects\\VNA_TM4C1294XL.axf" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.

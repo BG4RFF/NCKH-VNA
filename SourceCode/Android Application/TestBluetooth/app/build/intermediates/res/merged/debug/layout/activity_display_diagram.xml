@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.manht.testbluetooth.DisplayDiagram">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="6dp"
+        android:text="Measuring Result"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Magnitude (dB)" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"></com.github.mikephil.charting.charts.LineChart>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Frequencies (MHz)" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtFrequencyInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtMagnitudeInfo"
+            android:layout_marginTop="24dp"
+            android:padding="6dp"
+            android:text="Frequency: "
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtShowFrequencyInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtMagnitudeInfo"
+            android:layout_alignStart="@+id/txtShowMagnitudeInfo"
+            android:padding="6dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Not selected" />
+
+        <TextView
+            android:id="@+id/txtMagnitudeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFrequencyInfo"
+            android:layout_marginStart="50dp"
+            android:padding="6dp"
+            android:text="Magnitude: "
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtShowMagnitudeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtShowFrequencyInfo"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/txtMagnitudeInfo"
+            android:padding="6dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Not selected" />
+
+        <TextView
+            android:id="@+id/txtQualityInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtMagnitudeInfo"
+            android:layout_below="@+id/txtMagnitudeInfo"
+            android:padding="6dp"
+            android:text="Quality: "
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtShowQualityInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtShowMagnitudeInfo"
+            android:layout_below="@+id/txtShowMagnitudeInfo"
+            android:padding="6dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Not selected" />
+
+    </RelativeLayout>
+
+</LinearLayout>

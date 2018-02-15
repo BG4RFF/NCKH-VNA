@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\NCKH-2017\\SourceCode\\Android Application\\TestBluetooth\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\thaonguyen\\.android\\build-cache\\d5a293bde9b9656be6685eba1d355ec56ff4b1c9\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "D:\\NCKH-2017\\SourceCode\\Android Application\\TestBluetooth\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\thaonguyen\\.android\\build-cache\\d5a293bde9b9656be6685eba1d355ec56ff4b1c9\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "D:\\NCKH-2017\\SourceCode\\Android Application\\TestBluetooth\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\thaonguyen\\.android\\build-cache\\d5a293bde9b9656be6685eba1d355ec56ff4b1c9\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "D:\\NCKH-2017\\SourceCode\\Android Application\\TestBluetooth\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\thaonguyen\\.android\\build-cache\\d5a293bde9b9656be6685eba1d355ec56ff4b1c9\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "D:\\NCKH-2017\\SourceCode\\Android Application\\TestBluetooth\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\thaonguyen\\.android\\build-cache\\d5a293bde9b9656be6685eba1d355ec56ff4b1c9\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "D:\\NCKH-2017\\SourceCode\\Android Application\\TestBluetooth\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\thaonguyen\\.android\\build-cache\\d5a293bde9b9656be6685eba1d355ec56ff4b1c9\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    }
+]

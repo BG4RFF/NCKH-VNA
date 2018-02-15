@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="24"
+    build-mode="FULL"
+    density="420dpi"
+    format="10"
+    plugin-version="2.3.3"
+    timestamp="1511165410382"
+    token="4701348052585622860"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="D:\NCKH-2017\SourceCode\Android Application\TestBluetooth\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\NCKH-2017\SourceCode\Android Application\TestBluetooth\app\build\outputs\apk\app-debug.apk"
+        type="SPLIT_MAIN" />
+
+    <build
+        build-mode="FULL"
+        timestamp="1511165410382"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="D:\NCKH-2017\SourceCode\Android Application\TestBluetooth\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\NCKH-2017\SourceCode\Android Application\TestBluetooth\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+
+</instant-run>

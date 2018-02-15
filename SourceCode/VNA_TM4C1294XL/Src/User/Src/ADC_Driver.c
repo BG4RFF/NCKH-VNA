@@ -2,57 +2,65 @@
 
 void ADC_init(void)
 {
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC0);
-    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_ADC0))
+    SysCtlPeripheralEnable(VMAG_ADC_SYSCTL_PERIPH);
+    while (!SysCtlPeripheralReady(VMAG_ADC_SYSCTL_PERIPH))
     {
     }
 
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC1);
-    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_ADC1))
+    SysCtlPeripheralEnable(VPHS_ADC_SYSCTL_PERIPH);
+    while (!SysCtlPeripheralReady(VPHS_ADC_SYSCTL_PERIPH))
     {
     }
 
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOE);
-    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOE))
+    SysCtlPeripheralEnable(VMAG_ADC_AIN_SYSCTL_PERIPH);
+    while (!SysCtlPeripheralReady(VMAG_ADC_AIN_SYSCTL_PERIPH))
     {
     }
 
-    GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_0); // AIN3
-    GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_1); // AIN2
+    SysCtlPeripheralEnable(VPHS_ADC_AIN_SYSCTL_PERIPH);
+    while (!SysCtlPeripheralReady(VPHS_ADC_AIN_SYSCTL_PERIPH))
+    {
+    }
 
-    ADCSequenceConfigure(ADC0_BASE, 3, ADC_TRIGGER_PROCESSOR, 0);
-    ADCSequenceStepConfigure(ADC0_BASE, 3, 0, ADC_CTL_CH2 | ADC_CTL_IE | ADC_CTL_END);
-    ADCSequenceEnable(ADC0_BASE, 3);
+    GPIOPinTypeADC(VMAG_AIN_PORT_BASE, VMAG_AIN_PIN); // AIN3
+    GPIOPinTypeADC(VPHS_AIN_PORT_BASE, VPHS_AIN_PIN); // AIN2
 
-    ADCSequenceConfigure(ADC1_BASE, 3, ADC_TRIGGER_PROCESSOR, 0);
-    ADCSequenceStepConfigure(ADC1_BASE, 3, 0, ADC_CTL_CH3 | ADC_CTL_IE | ADC_CTL_END);
-    ADCSequenceEnable(ADC1_BASE, 3);
+    ADCSequenceConfigure(VMAG_ADC_BASE, 3, ADC_TRIGGER_PROCESSOR, 0);
+    ADCSequenceStepConfigure(VMAG_ADC_BASE, 3, 0, VMAG_ADC_CHANNEL | ADC_CTL_IE | ADC_CTL_END);
+    ADCSequenceEnable(VMAG_ADC_BASE, 3);
+
+    ADCSequenceConfigure(VPHS_ADC_BASE, 3, ADC_TRIGGER_PROCESSOR, 0);
+    ADCSequenceStepConfigure(VPHS_ADC_BASE, 3, 0, VPHS_ADC_CHANNEL | ADC_CTL_IE | ADC_CTL_END);
+    ADCSequenceEnable(VPHS_ADC_BASE, 3);
 }
 
-uint16_t ADC_readMag(void)
+double ADC_readMag(void)
 {
     uint32_t returnValue = 0;
 
-    ADCProcessorTrigger(ADC0_BASE, 3);
-    while (!ADCIntStatus(ADC0_BASE, 3, false))
+    ADCProcessorTrigger(VMAG_ADC_BASE, 3);
+    while (!ADCIntStatus(VMAG_ADC_BASE, 3, false))
     {
     }
-    ADCIntClear(ADC0_BASE, 3);
-    ADCSequenceDataGet(ADC0_BASE, 3, &returnValue);
+    ADCIntClear(VMAG_ADC_BASE, 3);
+    ADCSequenceDataGet(VMAG_ADC_BASE, 3, &returnValue);
 
-    return returnValue;
+    double tmp = (returnValue / 4096.0);
+    double Voltage = ((double)3.3) * tmp;
+    return (Voltage * 60 / 1.8) - 30;
 }
 
-uint16_t ADC_readPhs(void)
+double ADC_readPhs(void)
 {
     uint32_t returnValue = 0;
 
-    ADCProcessorTrigger(ADC1_BASE, 3);
-    while (!ADCIntStatus(ADC1_BASE, 3, false))
+    ADCProcessorTrigger(VPHS_ADC_BASE, 3);
+    while (!ADCIntStatus(VPHS_ADC_BASE, 3, false))
     {
     }
-    ADCIntClear(ADC1_BASE, 3);
-    ADCSequenceDataGet(ADC1_BASE, 3, &returnValue);
+    ADCIntClear(VPHS_ADC_BASE, 3);
+    ADCSequenceDataGet(VPHS_ADC_BASE, 3, &returnValue);
 
-    return returnValue;
+    double Voltage = REFERENCE_VOLTAGE * (returnValue / 4096.0);
+    return (180 - (Voltage * 100));
 }

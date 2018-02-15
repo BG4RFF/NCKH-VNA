@@ -11,14 +11,13 @@
 #include <driverlib/sysctl.h>
 #include <driverlib/gpio.h>
 #include <driverlib/adc.h>
+#include "PinConfiguration.h"
 
-/*********** Defines ***********/
-#define VMAG ADC_Channel_8
-#define VPHS ADC_Channel_9
+#define REFERENCE_VOLTAGE 3.3
 
 /*********** Methods ***********/
 void ADC_init(void);
-uint16_t ADC_readMag(void);
-uint16_t ADC_readPhs(void);
+double ADC_readMag(void);
+double ADC_readPhs(void);
 
 #endif /* __ADC_DRIVER__ */
